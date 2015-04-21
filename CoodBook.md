@@ -3,7 +3,7 @@
 
 |		|		Variable	|	Description			|
 |---------|-------------|-----------------|
-|	1	|		ID	|	Number of Observation			|
+|	1	|		ID	|	Subject			|
 |	2	|		Act	|	Activity			|
 |	3	|	avarage_tBodyAcc-mean()-X	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in  X-Direction	|
 |	4	|	avarage_tBodyAcc-mean()-Y	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in Y-Direction	|
@@ -75,9 +75,18 @@
 ### Description of the data
 
 #### Raw data
+* As descriped in the readme.md, read the README.txt from the UCI HAR Dataset.
 * The raw data is actually hard to understand. There are a few txt-documents that contains different parts of the dataset. 
-* First of all, there are 30 subjects.  
-* 
+* "train/X_train.txt" (Measurements traingroup) and "test/X_test.txt" (Measurements Testgroup) overall contains measurements for 561 variables from over 9000 observations. 
+* "train/subject_train.txt" and "test/subject_test.txt" 
+
+
+
+<b>(C) by. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012</b>
+
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
 
 #### Tidy data
 * long-format
