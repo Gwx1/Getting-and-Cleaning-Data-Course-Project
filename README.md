@@ -27,7 +27,7 @@ From the data set in step 4, creates a second, independent tidy data set with th
 * The R script required to reproduce this dataframe is named "run_analysis.R" and is also stored in this repository. 
 * The file "Codebook.md" describes the variables of the Tidydata.txt, the data, and any transformations or work that was performed to make the raw data tidy
 
-### Content of the repository ###
+#### Content of the repository ####
 * run_analysis.R
 * CodeBook.md
 * Tidydata.txt
@@ -35,6 +35,6 @@ From the data set in step 4, creates a second, independent tidy data set with th
 
 ## Reproduce and understand this project ##
 * To understand the Tidydata-dataframe and the steps to make it, it's necessary to understand the structure of the raw data. For this you should read the Readme.txt in the "UCI HAR Dataset"-folder inside the packed file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-* To reproduce "Tidydata.txt" inside "{working directory}/data/", simply copy the code from "run_analysis.r"-script and execute it with R (Version 3.1.3 - 2015-03-09). THis should take a few minutes. 
+* To reproduce "Tidydata.txt" inside "{working directory}/data/", simply copy the code from "run_analysis.r"-script and execute it with R (Version 3.1.3 - 2015-03-09). This should take a few minutes. 
 * The "CodeBook.md"-file descripes the steps to form the tidydata
 * The "run_analysis.r"-script is also well commented. For a better understanding the processes in R to form the tidy data, it should also be read.
