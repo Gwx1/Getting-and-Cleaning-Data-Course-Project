@@ -21,4 +21,4 @@ From the data set in step 4, creates a second, independent tidy data set with th
 <p>Good luck! </p>
 </blockquote>
 
-Following this task there was a file named "Tidydata.txt" created that is also stored in this repository. It's a dataframe with a total of 68 variables with 180 observations. 
+Following this task there was a file named "Tidydata.txt" created that is also stored in this repository. It's a dataframe with a total of 68 variables and 180 observations (Note: The first line is the header). 
