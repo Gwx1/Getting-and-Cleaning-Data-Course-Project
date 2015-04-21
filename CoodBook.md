@@ -74,7 +74,7 @@
 
 ### Description of the data
 
-#### UCI HAR Dataset  [1] (Raw data)
+##### UCI HAR Dataset  [1] (Raw data)
 * As descriped in the readme.md, read the README.txt from the UCI HAR Dataset.
 * The raw data is actually hard to understand. There are a few txt-documents that contains different parts of the dataset. 
 * "train/X_train.txt" (Measurements traingroup) and "test/X_test.txt" (Measurements Testgroup) overall contains measurements for 561 variables from over 9000 (!) observations. All observations are clearly attributable to the examined 30 people. 70% of the examined persons are located in the X_train-data and 30% in the X_test-data.
@@ -85,9 +85,7 @@
 * For the purpose of this Course-Project the documents in the "Inertial Signals" can be ignored
 * The order of the different parts matches each other
 
-
-
-#### Tidydata.txt (Tidy data)
+##### Tidydata.txt (Tidy data)
 
 * The Tidydata.txt is the summary of the avarage value of each variable with the keywords "mean" and "std" for each activity and each subject. Since there are multiple measurements of each subject (maybe different time points) in the raw data, the tidydata forms for each subject and each from the six activitys the avarage value. 
 * In addition the dataset merges the training and the test-sets (X_Train and X_test) to create one data set.
