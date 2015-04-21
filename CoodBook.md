@@ -1,5 +1,5 @@
-
-## Description of the variables
+# Codebook #
+### Description of the variables ###
 
 |		|		Variable	|	Description			|
 |---------|-------------|-----------------|
