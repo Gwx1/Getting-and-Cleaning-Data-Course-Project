@@ -24,7 +24,7 @@ From the data set in step 4, creates a second, independent tidy data set with th
 ## Description and content of this repository ##
 
 * Following the tasks above there was a file named "Tidydata.txt" created which is also stored in this repository. It's a tidy dataframe with a total of 68 variables and 180 observations (Note: The first line is the header). 
-* The dataframe matches the requirements for tidy data from Hadley Wickham (http://vita.had.co.nz/papers/tidy-data.pdf): 1) Each  variable forms a column, 2) each observation forms a row and 3) each type of observational unit forms a table. Keep in mind that one observation is actually the combination of the subject (ID) and the specific activity (Act).  
+* The dataframe matches the requirements for tidy data from Hadley Wickham (http://vita.had.co.nz/papers/tidy-data.pdf): 1) Each  variable forms a column, 2) each observation forms a row and 3) each type of observational unit forms a table. Keep in mind that one observation is composed of the subject (ID) <b>and</b> the specific activity (Act). So every observation have one unique row.
 * The R script required to reproduce this dataframe is named "run_analysis.R" and is also stored in this repository. 
 * The file "Codebook.md" describes the variables of the Tidydata.txt, the data, and any transformations or work that was performed to make the raw data tidy
 
