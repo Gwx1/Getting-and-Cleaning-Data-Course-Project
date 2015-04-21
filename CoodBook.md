@@ -101,7 +101,7 @@
 * extract only the variables/columnnames "ID", "Act" and variables with the keywords "mean()" and "std()" and form a new dataset
 * revalue the activity-values (1,2,...) to the empirical values (WALKING, WALKING_UPSTAIRS,...)
 * Summarise each variable with the mean grouped by "ID" and "Act"
-* rename the colnames of the aggregated variables (Avarage_{Old_Var}
+* rename the colnames of the aggregated variables (Avarage_{Old_Var})
 
 ### Sources
 
