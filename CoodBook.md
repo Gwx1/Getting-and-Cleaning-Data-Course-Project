@@ -74,7 +74,7 @@
 
 ### Description of the data
 
-##### UCI HAR Dataset  [1] (Raw data)
+##### UCI HAR Dataset  [1] #####
 * As descriped in the readme.md, read the README.txt from the UCI HAR Dataset.
 * The raw data is actually hard to understand. There are a few txt-documents that contains different parts of the dataset. 
 * "train/X_train.txt" (Measurements traingroup) and "test/X_test.txt" (Measurements Testgroup) overall contains measurements for 561 variables from over 9000 (!) observations. All observations are clearly attributable to the examined 30 people. 70% of the examined persons are located in the X_train-data and 30% in the X_test-data.
