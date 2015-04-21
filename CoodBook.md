@@ -1,3 +1,6 @@
+
+## Description of the variables
+
 |		|		Variable	|	Description			|
 |---------|-------------|-----------------|
 |	1	|		ID	|	Number of Observation			|
