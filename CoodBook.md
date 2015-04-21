@@ -1,7 +1,7 @@
-|	Variablenumber	|		Variable	|	Description			|
-|-----------------|-------------|-----------------|
-|	1	|		ID	|				|
-|	2	|		Act	|				|
+|		|		Variable	|	Description			|
+|---------|-------------|-----------------|
+|	1	|		ID	|	Number of Observation			|
+|	2	|		Act	|	Activity			|
 |	3	|	avarage	tBodyAcc-mean()-X	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in  X-Direction	|
 |	4	|	avarage	tBodyAcc-mean()-Y	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in Y-Direction	|
 |	5	|	avarage	tBodyAcc-mean()-Z	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in Z-Direction	|
