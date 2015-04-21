@@ -3,7 +3,7 @@
 
 |		|		Variable	|	Description			|
 |---------|-------------|-----------------|
-|	1	|		ID	|	Subject			|
+|	1	|		ID	|	Examined person			|
 |	2	|		Act	|	Activity			|
 |	3	|	avarage_tBodyAcc-mean()-X	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in  X-Direction	|
 |	4	|	avarage_tBodyAcc-mean()-Y	|	Avarage Value	of the variable "Mean of the time of body acceleration signals"	in Y-Direction	|
@@ -74,19 +74,23 @@
 
 ### Description of the data
 
-#### Raw data
+#### UCI HAR Dataset (Raw data) [1]
 * As descriped in the readme.md, read the README.txt from the UCI HAR Dataset.
 * The raw data is actually hard to understand. There are a few txt-documents that contains different parts of the dataset. 
-* "train/X_train.txt" (Measurements traingroup) and "test/X_test.txt" (Measurements Testgroup) overall contains measurements for 561 variables from over 9000 observations. 
-* "train/subject_train.txt" and "test/subject_test.txt" 
+* "train/X_train.txt" (Measurements traingroup) and "test/X_test.txt" (Measurements Testgroup) overall contains measurements for 561 variables from over 9000 (!) observations. All observations are clearly attributable to the examined 30 people. 70% of the examined persons are located in the X_train-data and 30% in the X_test-data.
+* "train/subject_train.txt" and "test/subject_test.txt" contains the ID's of the examined persons for the Train- and Testdata.
+* "train/y_train.txt" and "train/y_train.txt" contains the activity done by each subject
+* "activity_labels.txt" shows the assignment from the number of each activity to the empirical value
+* "features.txt" contains all column-names for the X_train and X_test-data.
+* For the purpose of this Course-Project the documents in the "Inertial Signals" can be ignored
+* The order of the different parts matches each other
+
+<b><p>[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012</p>
+
+#### Tidydata.txt (Tidy data)
+
+* The Tidydata.txt is the summary of the avarage value of each variable with the keywords "mean" and "std" for each activity and each subject. Since there are multiple measurements of each subject (maybe different time points) in the raw data, the tidydata forms for each subject and each from the six activitys the avarage value. 
+* In addition the dataset merges the training and the test-sets (X_Train and X_test) to create one data set.
+* It also assign the ID's of the examined persons and the performed activity to each subject and name the columns. 
 
 
-
-<b>(C) by. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012</b>
-
-
-Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
-
-
-#### Tidy data
-* long-format
