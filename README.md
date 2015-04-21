@@ -39,13 +39,13 @@ From the data set in step 4, creates a second, independent tidy data set with th
 * To reproduce "Tidydata.txt" inside "{working directory}/data/", simply copy the code from "run_analysis.r"-script and execute it with R (Version 3.1.3 - 2015-03-09). This should take a few minutes. If there are any problems, try to load the required packages seperate (library(dplyr), library(plyr)).
 * The run_analysis.R-script does the following:
 <div style="text-indent:10px;">
-* 1) columnbind labels to the values of the Test- and Trainsubjects 
-* 2) rowbind the ID's of the subjects and columnbind this with the dataframes from the first step 
-* 3) Columnbind the Testsubject-dataset with the Trainsubject-dataset 
-* 4) rename the columns to the original variable-names 
-* 5) revalue the labels (1,2,...) to the empirical values (WALKING, WALKING_UPSTAIRS,...) 
-* 6) Summarise each variable with the mean grouped by "ID" and "Act"
-* 7) rename the colnames of the aggregated variables 
+ 1) columnbind labels to the values of the Test- and Trainsubjects 
+ 2) rowbind the ID's of the subjects and columnbind this with the dataframes from the first step 
+ 3) Columnbind the Testsubject-dataset with the Trainsubject-dataset 
+ 4) rename the columns to the original variable-names 
+ 5) revalue the labels (1,2,...) to the empirical values (WALKING, WALKING_UPSTAIRS,...) 
+ 6) Summarise each variable with the mean grouped by "ID" and "Act"
+ 7) rename the colnames of the aggregated variables 
 </div>
 * Read also the "CodeBook.md"-file, which provides more details.
 * The "run_analysis.r"-script is also well commented. For a better understanding the processes in R to form the tidy data, it should also be read.
