@@ -41,14 +41,12 @@ subject <- rbind(subject_test, subject_train) ## Rowbind the IDs of the test- an
 TT <- rbind(Test, Train)                      ## Match the Test and Train-dataset with rowbind
 Set <- cbind(subject, TT)                     ## columnbind IDs with the matched data in the object "set"
                                             
-
 ## Set is the matched data
 
 ######################### Second step ###########################  
 #### Extract only the measurements on the mean and standard #####
 ############### deviation for each measurement ##################
 #################################################################  
-
 
 #### Step 2.1: Prepare the Columnnames of the dataset to select variables with keywords
 
@@ -59,9 +57,7 @@ mm <- rbind(m1,m2)                                            ## nonsence-matrix
 header <- mm[,2]                                              ## extract column 2 (all columnnames)  as a vector
 colnames(Set) <- header                                       ## rename all columns from set
 
-
 ## Notice: The way of doing this step makes the whole Step 4 redundant
-
 
 #### Step 2.2: Extract the Variables with mean and standard deviation
 
