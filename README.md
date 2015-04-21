@@ -35,11 +35,11 @@ From the data set in step 4, creates a second, independent tidy data set with th
 * README.md
 
 ## Reproduce and understand this project ##
-* To understand the final dataframe (Tidydata.txt) and the steps to transform the raw data, it's first necessary to understand the structure of the raw data. For this you should read the Readme.txt in the "UCI HAR Dataset"-folder inside the packed file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+* To understand the final dataframe (Tidydata.txt) and the steps to transform the raw data, it's first necessary to understand the structure of the raw data and read the Readme.txt in the "UCI HAR Dataset"-folder inside the packed file (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 <br>
 * To reproduce "Tidydata.txt" inside "{working directory}/data/", simply copy the code from "run_analysis.r"-script and execute it with R (Version 3.1.3 - 2015-03-09). This should take a few minutes. If there are any problems, try to load the required packages seperate (library(dplyr), library(plyr)).
 <br>
-* <b>The run_analysis.R-script does the following: </b>
+* The run_analysis.R-script does the following:
  1. columnbind labels to the values of the Test- and Trainsubjects 
  2. rowbind the ID's of the subjects and columnbind this with the dataframes from the first step 
  3. Columnbind the Testsubject-dataset with the Trainsubject-dataset 
