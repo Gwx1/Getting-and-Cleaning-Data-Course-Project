@@ -39,3 +39,6 @@ From the data set in step 4, creates a second, independent tidy data set with th
 * To reproduce "Tidydata.txt" inside "{working directory}/data/", simply copy the code from "run_analysis.r"-script and execute it with R (Version 3.1.3 - 2015-03-09). This should take a few minutes. If there are any problems, try to load the required packages seperate (library(dplyr), library(plyr)).
 * The "CodeBook.md"-file descripes the steps to form the tidydata
 * The "run_analysis.r"-script is also well commented. For a better understanding the processes in R to form the tidy data, it should also be read.
+
+## Sources ## 
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
