@@ -105,12 +105,9 @@ Finaldata$Act <- revalue(Finaldata$Act, c("1"="WALKING", "2"="WALKING_UPSTAIRS",
 ###### each variable for each activity and each subject  #######
 ################################################################ 
 
-
-
 Tidydata <- (Finaldata %>%      
   group_by(ID, Act) %>%         
   summarise_each(funs(mean)))   ## Summarise each variable with the mean grouped by ID and Act
-
 
 ## I don't like the fact, that the columnnames are the same as in the Finaldata
 ## because there are actually different variables (avarage values vs. avagerage value
@@ -119,7 +116,6 @@ Tidydata <- (Finaldata %>%
 colnames(Tidydata) <- paste("Avarage", colnames(Tidydata), sep = "_")
 colnames(Tidydata)[1:2] <- c("ID", "Act")
 
-
 ## The object "Tidydata" is the last required dataset 
 
-write.table(Tidydata, file= "./data/Tidydata.txt", row.name=FALSE)
+write.table(Tidydata, file= "./data/Tidydata.txt", row.name=FALSE) ## save the table in the Working Directory/data-Folder
