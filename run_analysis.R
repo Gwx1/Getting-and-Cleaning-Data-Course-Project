@@ -1,8 +1,8 @@
 ##install and load the required packages: dplyr and plyr
 install.packages("dplyr")
 install.packages("plyr")
-library(plyr)
-library(dplyr)
+library(plyr)                       ## if problems: run the functions seperately
+library(dplyr)                      ## if problems: run the functions seperately                                                                          
 
 ## Make WD/Data, Download and unzip file  
 
@@ -49,6 +49,7 @@ Set <- cbind(subject, TT)                     ## columnbind IDs with the matched
 ############### deviation for each measurement ##################
 #################################################################  
 
+
 #### Step 2.1: Prepare the Columnnames of the dataset to select variables with keywords
 
 features <- read.table("./data/UCI HAR Dataset/features.txt") ## read the Columnnames
@@ -58,7 +59,9 @@ mm <- rbind(m1,m2)                                            ## nonsence-matrix
 header <- mm[,2]                                              ## extract column 2 (all columnnames)  as a vector
 colnames(Set) <- header                                       ## rename all columns from set
 
+
 ## Notice: The way of doing this step makes the whole Step 4 redundant
+
 
 #### Step 2.2: Extract the Variables with mean and standard deviation
 
@@ -93,6 +96,7 @@ Finaldata$Act <- revalue(Finaldata$Act, c("1"="WALKING", "2"="WALKING_UPSTAIRS",
 ####################### variable names  ########################
 ################################################################ 
 
+
 ## This step was already done in step 2.1 and 2.2
 
 ########################### 5.step #############################  
@@ -101,19 +105,21 @@ Finaldata$Act <- revalue(Finaldata$Act, c("1"="WALKING", "2"="WALKING_UPSTAIRS",
 ###### each variable for each activity and each subject  #######
 ################################################################ 
 
+
+
 Tidydata <- (Finaldata %>%      
   group_by(ID, Act) %>%         
   summarise_each(funs(mean)))   ## Summarise each variable with the mean grouped by ID and Act
-  
-## The object "Tidydata" is the last required dataset 
+
 
 ## I don't like the fact, that the columnnames are the same as in the Finaldata
 ## because there are actually different variables (avarage values vs. avagerage value
-## of all the avarage values). To adress that on can do this additional step:
+## of all the avarage values). To adress that i did this additional step
 
-colnames(Tidydata) <- paste("Mean(", colnames(Tidydata), ")", sep = "")
+colnames(Tidydata) <- paste("Avarage", colnames(Tidydata), sep = "_")
 colnames(Tidydata)[1:2] <- c("ID", "Act")
 
 
-## save the data in a textfile
+## The object "Tidydata" is the last required dataset 
+
 write.table(Tidydata, file= "./data/Tidydata.txt", row.name=FALSE)
