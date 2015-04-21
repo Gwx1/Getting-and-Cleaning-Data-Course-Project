@@ -21,4 +21,16 @@ From the data set in step 4, creates a second, independent tidy data set with th
 <p>Good luck! </p>
 </blockquote>
 
-Following this task there was a file named "Tidydata.txt" created that is also stored in this repository. It's a dataframe with a total of 68 variables and 180 observations (Note: The first line is the header). 
+## Description and content of this repository ##
+
+<p> Following the tasks above there was a file named "Tidydata.txt" created which is also stored in this repository. It's a dataframe with a total of 68 variables and 180 observations (Note: The first line is the header). </p>
+<p> The R script to reproduce this dataframe is named "run_analysis.r </p>
+<p> The file "Codebook.md" describes the variables of the Tidydata.txt, the data, and any transformations or work that was performed to make the raw data tidy </p>
+
+### Content of the repository ###
+* run_analysis.r
+* CodeBook.md
+* Tidydata.txt
+* README.md
+
+
