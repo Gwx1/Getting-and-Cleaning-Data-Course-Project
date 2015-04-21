@@ -71,3 +71,13 @@
 |	66	|	avarage_fBodyBodyGyroMag-std()	|	Avarage Value	of the variable "Standard Deviation of the fast fourier transformed body gyro mag signals"		|
 |	67	|	avarage_fBodyBodyGyroJerkMag-mean()	|	Avarage Value	of the variable "Mean of the fast fourier transformed body gyro jerkmag signals"		|
 |	68	|	avarage_fBodyBodyGyroJerkMag-std()	|	Avarage Value	of the variable "Standard Deviation of the fast fourier transformed body gyro jerk mag signals"		|
+
+### Description of the data
+
+#### Raw data
+* The raw data is actually hard to understand. There are a few txt-documents that contains different parts of the dataset. 
+* First of all, there are 30 subjects.  
+* 
+
+#### Tidy data
+* long-format
